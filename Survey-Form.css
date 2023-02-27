@@ -1,0 +1,115 @@
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  color: #444;
+}
+
+header {
+  background-color: #00539C;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* style the form elements */
+form {
+  margin-top: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #00539C;
+}
+
+input[type="number"] {
+  max-width: 100px;
+}
+
+select {
+  width: 100%;
+  max-width: 100%;
+}
+
+fieldset {
+  border: none;
+}
+
+button {
+  background-color: #00539C;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #003A6C;
+}
+
+/* style the form validation messages */
+input:invalid,
+textarea:invalid {
+  border-color: #ff6b6b;
+}
+
+input:valid,
+textarea:valid {
+  border-color: #2ecc71;
+}
+
+input:invalid + span,
+textarea:invalid + span {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+input:valid + span,
+textarea:valid + span {
+  color: #2ecc71;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 0.5rem;
+}

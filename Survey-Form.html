@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Survey-Form.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+    </header>
+    <main>
+      <p id="description">Please fill out this survey form to help us improve our service.</p>
+      <form id="survey-form">
+        <div>
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+          <label for="email" id="email-label">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+          <label for="number" id="number-label">Age:</label>
+          <input type="number" id="number" name="age" placeholder="Enter your age" min="1" max="120" required>
+        </div>
+        <div>
+          <label for="dropdown">What is your occupation?</label>
+          <select id="dropdown" name="occupation" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="student">Student</option>
+            <option value="employee">Employee</option>
+            <option value="self-employed">Self-employed</option>
+            <option value="retired">Retired</option>
+            <option value="unemployed">Unemployed</option>
+          </select>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Which of the following describes you?</legend>
+            <label><input type="radio" name="description" value="introvert">Introvert</label>
+            <label><input type="radio" name="description" value="extrovert">Extrovert</label>
+            <label><input type="radio" name="description" value="ambivert">Ambivert</label>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Which of the following do you enjoy doing?</legend>
+            <label><input type="checkbox" name="activity" value="reading">Reading</label>
+            <label><input type="checkbox" name="activity" value="traveling">Traveling</label>
+            <label><input type="checkbox" name="activity" value="listening to music">Listening to music</label>
+            <label><input type="checkbox" name="activity" value="watching movies">Watching movies</label>
+          </fieldset>
+        </div>
+        <div>
+          <label for="comments">Any additional comments?</label>
+          <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
